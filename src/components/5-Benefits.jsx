@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaCheckCircle } from 'react-icons/fa';
 import CTAButton from './CTAButton';
-
+import hman from '../../public/images/hman.png'
 const benefits = [
   {
     title: "تحسين الانتصاب",
@@ -73,6 +73,7 @@ function Benefits() {
           ))}
         </motion.div>
         <CTAButton/>
+         <img src={hman} className='mb-[-64px] mt-[50px]'/>
       </div>
     </section>
   );

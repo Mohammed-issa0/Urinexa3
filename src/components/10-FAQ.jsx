@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
-
+import green from '../../public/images/green.jpg'
 const faqs = [
   {
     question: "هل المنتج آمن؟",
@@ -90,6 +90,7 @@ function FAQ() {
           ))}
         </motion.div>
       </div>
+      <img src={green} className='mt-[20px] h-[200px] mx-auto mb-[-30px]'/>
     </section>
   );
 }

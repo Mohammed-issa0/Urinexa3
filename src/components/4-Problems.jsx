@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaExclamationTriangle } from 'react-icons/fa';
 import { Frown,ThumbsDown,CircleX,ShieldX,PowerOff } from "lucide-react";
+import sman from '../../public/images/sman.png'
 const ProblemsSection = ({ isModalOpen, setIsModalOpen }) => {
   const problems = [
     {
@@ -111,6 +112,7 @@ const ProblemsSection = ({ isModalOpen, setIsModalOpen }) => {
               </div>
             </motion.div>
           ))}
+          <img src={sman} className='mb-[-80px]'/>
         </motion.div>
 
       </div>

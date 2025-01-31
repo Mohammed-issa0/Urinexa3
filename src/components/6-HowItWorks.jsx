@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import in1 from '../../public/images/inHand.png'
 import { useInView } from 'react-intersection-observer';
 import { FaLeaf } from 'react-icons/fa';
 
@@ -74,6 +75,7 @@ function HowItWorks() {
           ))}
         </motion.div>
       </div>
+      <img src={in1} className='size-[200px] mx-auto mt-[30px]'/>
     </section>
   );
 }
