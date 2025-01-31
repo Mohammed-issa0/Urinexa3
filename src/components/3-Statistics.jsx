@@ -2,7 +2,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import CTAButton from './CTAButton';
 import { CircleAlert,ChartColumnBig } from "lucide-react";
-function Statistics() {
+import Counter from './Counter'
+function Statistics({ isModalOpen, setIsModalOpen }) {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
@@ -62,22 +63,12 @@ function Statistics() {
             بسبب ندرة المكونات المستخدمة والطلب الهائل على Urinexa، يُسمح باستيراد 150 عبوة فقط شهرياً.
             فإذا لم تقم بالحجز الآن، فقد تضطر للانتظار شهوراً أخرى للحصول على منتجنا الفريد. لا تفوّت فرصة تحسين حياتك الزوجية، خاصة عندما تكون بين يديك الآن.
           </p>
-          <motion.div
-            animate={{
-              scale: [1, 1.1, 1],
-              color: ["#DC2626", "#991B1B", "#DC2626"]
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="text-2xl font-bold text-center"
-          >
-            9/150 عبوة متبقية
-          </motion.div>
+          <div className='flex justify-center items-center'>
+          <Counter  />
+          </div>
           <div className="mt-6">
-            <CTAButton />
+            <CTAButton  isModalOpen={isModalOpen}
+                  setIsModalOpen={setIsModalOpen}/>
           </div>
         </motion.div>
 

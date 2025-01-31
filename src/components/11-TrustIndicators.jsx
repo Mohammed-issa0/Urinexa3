@@ -1,6 +1,6 @@
 import { FaLeaf, FaShieldAlt, FaClock } from 'react-icons/fa';
 
-function TrustIndicators() {
+function TrustIndicators({ isModalOpen, setIsModalOpen }) {
   return (
     <section className="py-16 bg-secondary">
       <div className="container mx-auto px-4">

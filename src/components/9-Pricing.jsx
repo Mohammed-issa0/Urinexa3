@@ -95,7 +95,8 @@ export default function Pricing({ isModalOpen, setIsModalOpen }) {
             >
               (اضغط الآن وابدأ رحلة جديدة مليئة بالسعادة والشغف الزوجي.)
             </motion.p>
-            <CTAButton />
+            <CTAButton  isModalOpen={isModalOpen}
+                  setIsModalOpen={setIsModalOpen}/>
             <motion.div
               variants={containerVariants}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-3 mt-10 gap-4 text-right items-center justify-center"

@@ -3,7 +3,7 @@ import CTAButton from './CTAButton';
 import { useState, useRef } from "react";
 import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 
-function Hero() {
+function Hero({ isModalOpen, setIsModalOpen }) {
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
   const videoSrc = "/vd.mp4";
@@ -32,7 +32,7 @@ function Hero() {
   };
 
   return (
-    <section className="bg-gradient-to-r from-[#6cd892] to-[#46b99a] text-white py-20">
+    <section className="bg-gradient-to-r from-[#12e45b] to-[#46b99a] text-white py-20">
       <div className="container mx-auto px-4">
         <motion.div
           variants={containerVariants}
@@ -77,7 +77,8 @@ function Hero() {
           </motion.div>
 
           <motion.div variants={itemVariants}>
-            <CTAButton />
+            <CTAButton isModalOpen={isModalOpen}
+                  setIsModalOpen={setIsModalOpen}/>
           </motion.div>
         </motion.div>
       </div>

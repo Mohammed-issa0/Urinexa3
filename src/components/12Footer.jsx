@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import CTAButton from './CTAButton';
 
-function Footer() {
+function Footer({ isModalOpen, setIsModalOpen }) {
   return (
     <section className="bg-amber-50 text-black py-16">
       <div className="container mx-auto px-4 text-center">
@@ -15,7 +15,8 @@ function Footer() {
             هل ستعود لحياتك الروتينية المليئة بالإحباط أم أنك ستغتنم هذه الفرصة الفريدة لاستعادة قوتك وثقتك وتحقيق السعادة لك ولشريكتك؟
           </h2>
           <p className="text-2xl font-bold mb-8">"الفرصة بين يديك الآن. اغتنمها!"</p>
-          <CTAButton />
+          <CTAButton  isModalOpen={isModalOpen}
+                  setIsModalOpen={setIsModalOpen}/>
         </motion.div>
       </div>
     </section>

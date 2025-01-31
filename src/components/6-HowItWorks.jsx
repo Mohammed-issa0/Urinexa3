@@ -22,7 +22,7 @@ const ingredients = [
   }
 ];
 
-function HowItWorks() {
+function HowItWorks({ isModalOpen, setIsModalOpen }) {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1

@@ -3,7 +3,7 @@ import { Star, UserCircle2 } from "lucide-react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-export default function Testimonials() {
+export default function Testimonials({ isModalOpen, setIsModalOpen }) {
   const testimonials = [
     {
       name: "محمد الورتاني",

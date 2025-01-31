@@ -25,7 +25,7 @@ const benefits = [
   }
 ];
 
-function Benefits() {
+function Benefits({ isModalOpen, setIsModalOpen }) {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
@@ -72,7 +72,8 @@ function Benefits() {
             </motion.div>
           ))}
         </motion.div>
-        <CTAButton/>
+        <CTAButton  isModalOpen={isModalOpen}
+                  setIsModalOpen={setIsModalOpen}/>
          <img src={hman} className='mb-[-64px] mt-[50px]'/>
       </div>
     </section>

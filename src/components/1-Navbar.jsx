@@ -12,7 +12,7 @@ export default function Navbar({ isModalOpen, setIsModalOpen }) {
       className="fixed w-full bg-amber-50 shadow-sm backdrop-blur-md z-50"
       dir="rtl"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-row-reverse justify-between items-center h-16">
           {/* Logo */}
           <a href="#" className="flex items-center space-x-2">
