@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  direction: rtl;
+  font-family: "Cairo", sans-serif ;
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background: #137131;
+  color: white;
+  font-wight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif,system-ui, Avenir, Helvetica, Arial,;
+}
