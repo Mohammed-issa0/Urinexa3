@@ -2,7 +2,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import CTAButton from './CTAButton';
 import { CircleAlert,ChartColumnBig } from "lucide-react";
-import Counter from './Counter'
+import Counter from './Counter';
+import Stc from './Stc'
 function Statistics({ isModalOpen, setIsModalOpen }) {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -13,19 +14,7 @@ function Statistics({ isModalOpen, setIsModalOpen }) {
     <section className="py-16 bg-white" ref={ref}>
       <div className="container mx-auto px-4">
         {/* الجزء الأول */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center max-w-4xl mx-auto mb-12"
-        >
-          <p className="text-lg text-gray-700 mb-6">
-            وفقاً للإحصائيات،<span className='text-primary'> 52% من الرجال</span> فوق سن الأربعين يعانون من مشاكل جنسية تؤثر سلباً على ثقتهم وعلاقاتهم.
-          </p>
-          <p className="text-lg text-gray-700 mb-6">
-            ومع ذلك،<span className='text-primary'> 85% </span>منهم لا يتحدثون عن هذه المشكلات ولا يبحثون عن حلول فعالة بسبب الإحراج أو عدم معرفة الحلول الآمنة.
-          </p>
-        </motion.div>
+        <Stc />
 
         {/* الجزء الثاني */}
         <motion.div
